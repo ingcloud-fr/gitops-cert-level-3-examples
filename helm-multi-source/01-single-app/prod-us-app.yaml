@@ -20,7 +20,7 @@ spec:
         - $values/helm-multi-source/my-values/app-version/prod-values.yaml               
         - $values/helm-multi-source/my-values/env-type/prod-values.yaml  
         - $values/helm-multi-source/my-values/regions/eu-values.yaml                
-        - $values/helm-multi-source/my-values/envs/us-values.yaml
+        - $values/helm-multi-source/my-values/envs/prod-us-values.yaml
     - repoURL: 'https://github.com/ingcloud-fr/gitops-cert-level-3-examples.git'
       targetRevision: HEAD
       ref: values
