@@ -20,6 +20,7 @@ spec:
       project: default
 
       sources:
+        # Le repo helm
         - repoURL: https://kostis-codefresh.github.io/multi-sources-example
           chart: my-chart
           targetRevision: '{{.chart}}'
@@ -30,6 +31,7 @@ spec:
             - $values/helm-multi-source/my-values/env-type/{{.type}}-values.yaml  
             - $values/helm-multi-source/my-values/regions/{{.region}}-values.yaml                
             - $values/helm-multi-source/my-values/envs/{{.env}}-values.yaml
+        # Les values
         - repoURL: 'https://github.com/ingcloud-fr/gitops-cert-level-3-examples.git'
           targetRevision: HEAD
           ref: values
