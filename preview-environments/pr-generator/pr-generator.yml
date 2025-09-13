@@ -11,6 +11,9 @@ spec:
       github:
         owner: ingcloud-fr
         repo: gitops-cert-level-3-examples
+        # filtre avec label
+        labels:
+        - preview-ready        
       requeueAfterSeconds: 180
   template:
     metadata:
